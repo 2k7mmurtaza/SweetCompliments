@@ -1,0 +1,710 @@
+/* Importing Google Fonts to allow the use of the font family Montserrat */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower|Open+Sans|Poiret+One|Roboto');
+
+/* Setting the font for the entire doc as well as resetting the bodys margins and padding */
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #34495e;
+}
+
+header {
+	height: 100px;
+	display: block;
+}
+
+#logo {
+	margin-left: 50%;
+	transform: translate(-50%); /* margin auto cannot be used at in-line block level element*/
+	width: 250px;
+	height: 40px;
+	display: inline-block;
+	padding: 10px;
+	font-family: 'Amatic SC', cursive;
+	text-align: center;
+	color: #34495e;
+}
+
+nav {
+	display: none;
+}
+#nav-menu {
+	background-color:rgba(52,73,94, 0.91);
+	position: relative;
+	margin: auto;
+	margin-top: -15px;
+	width: 100%;
+}
+
+nav ul {
+	list-style-type: none;
+	display: inline-block;
+	width: 95%;
+	margin-left: 5%;
+	padding: 0;
+}
+nav li {
+	display: block;
+	padding: 10px;
+	font-size: 100%;
+}
+nav a {
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Amatic SC', cursive;
+	font-size: larger;
+	font-weight: bold;
+
+}
+
+
+/*  Styling for the toggled navigation   */
+#menu {
+  padding: 1em;
+  background: #fff;
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+.show-menu {
+  display: block;
+
+}
+
+/*  For creating - global styling  */
+
+section {
+	margin-top: 10px;
+}
+
+
+
+/* Styling for the home page */
+.welcome {
+	margin-top:100px;
+	margin-bottom: 50px;
+	display: block;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.welcome h3 {
+	text-align: center;
+}
+h2 {
+	font-family: 'Amatic SC', cursive;
+}
+h3, h4 {
+	font-family: 'Montserrat', sans-serif;
+}
+h6 {
+	font-family: 'Roboto', sans-serif;
+	color:#616565;
+}
+.welcome p {
+	text-align: justify;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.welcome h2 {
+	padding-left: 20px;
+}
+.welcome:hover:nth-child(2) {
+	opacity: 0.7;
+}
+
+.examples {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.examples h3 {
+	text-align: center;
+}
+.examples img {
+	width: 25%;
+	display: block;
+	margin:auto;
+}
+.examples p {
+	text-align: center;
+}
+
+#macbook {
+	width: 70%;
+	display: block;
+	margin: auto;
+}
+
+/* footer styling */
+footer {
+	height: 400px;
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items:space-between;
+	flex-direction: column;
+}
+.map {
+	width: 80%;
+	height: 200px;
+	display: block;
+	margin: auto;
+}
+.map h4 {
+	text-align: center;
+}
+.map ol {
+	display: inline-block;
+	padding: 0;
+	width: 100%;
+	height: 100px;
+	justify-content: space-around;
+}
+.map ol li {
+	text-align: center;
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+.map a {
+	line-height: 2em;
+	text-decoration: none;
+	color:#34495e;
+	font-weight: bold;
+}
+.map a:hover {
+	background-color: #34495e;
+	color: #fff;
+}
+
+footer img {
+	height: 35px;
+}
+footer a {
+	height: 35px;
+	display: block;
+	margin-left: 50%;
+	transform: translate(-50%);
+}
+footer ul {
+	display: block;
+	margin: auto;
+	padding: 0;
+}
+footer li {
+	display: inline-block;
+	list-style-type: none;
+}
+
+
+/* Styling for the contact page */
+
+.content-holder {
+	height: 500px;
+	width: 100%;
+	margin-top: 100px;
+	display: block;
+}
+.content-holder h2 {
+	text-align: center;
+}
+form {
+	display: block;
+	margin: auto;
+	height: 400px;
+}
+input[type=text], input[type=email] {
+	border: 1px solid #dedede;
+	height: 30px;
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+}
+input[type=submit] {
+	color:#fff;
+	background-color:#34495e;
+	border: none; 
+	font-family: 'Open Sans', sans-serif;
+	height: 30px;
+	width: 60px;
+	display: inline-block;
+	margin: 10px;
+}
+input[type=text]:focus {
+	border: 1px solid #34495e;
+}
+input[type=email]:focus {
+	border: 1px solid #34495e;
+}
+input[type=reset] {
+	color:#fff;
+	background-color:#34495e;
+	border: none; 
+	font-family: 'Open Sans', sans-serif;
+	height: 30px;
+	width: 60px;	
+	display: inline-block;
+	margin: 10px;
+}
+#form-options {
+	display: block;
+	margin: auto;
+	width: 200px;
+	margin-top: 20px;
+}
+#form-message {
+	width: 300px;
+	height: 100px;
+}
+#contact-info {
+	display: block;
+	margin: auto;
+	list-style-type: none;
+
+}
+#contact-info img {
+	height: 20px;
+	margin-left: 20px;
+	padding-right: 5px;
+}
+
+
+/* Styling for the projects page */
+
+.heading {
+		display: none;
+}
+
+.showcase {
+	display: block;
+	margin: auto;
+	height: 400px;
+
+}
+.showcase h3 {
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+.showcase p {
+	width: 350px;
+	display: block;
+	margin: auto;
+	text-align: justify;
+	padding: 30px;
+}
+.showcase img {
+	display: block;
+	width: 350px;
+	margin: auto;
+	margin-top: 10px;
+}
+.showcase img:hover {
+	opacity: 0.3;
+}
+.showcase:nth-child(2) {
+	margin-top: 100px;
+}
+
+/* Styling for the education page */
+
+.edu-detail {
+	display: block;
+	margin: auto;
+	height: 500px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	border-bottom: 1px dashed #34495e;
+}
+.edu-detail:nth-child(2){
+	margin-top: 80px;
+}
+.edu-detail h3, h4, h5, h6 {
+	font-family: 'Roboto', sans-serif;
+	height: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.edu-detail h4 {
+	padding-bottom: 15px;
+}
+.edu-detail p {
+	text-align: justify;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+}
+
+
+/* Beow is the styling for fig caption transition */
+
+figure {
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+	margin-right: 20px;
+	overflow: hidden;
+	width: 35%;
+	display: block;
+	margin: auto;
+}
+figure img {
+	width: 100%;
+}
+figcaption {
+  transform: translateY(2em);
+  background: #fff;
+  opacity: 0;
+  transition: all .5s;
+  text-align: center;
+}
+figure:hover figcaption {
+  transform: translateY(0em);
+  /* background: rgba( 255, 255, 255, .78 ); */
+  opacity: .8;
+}
+
+
+/* Styling for the projects pages */
+.proj-heading {
+	background-image: url('../img/projects/headers/mvc.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	margin-top: 50px;
+}
+#heading2 {
+	background-image: url('../img/projects/headers/static.jpg');
+}
+#heading3 {
+	background-image: url('../img/projects/headers/asp.jpg');
+}
+#heading4 {
+	background-image: url('../img/projects/headers/uni.jpg');
+}
+#heading5 {
+	background-image: url('../img/projects/headers/hugo.jpg');
+}
+
+.proj-heading h2 {
+	display: block;
+	margin: auto;
+	text-align: center;
+	font-size: 4em;
+	color: #fff;
+}
+.proj-desc {
+	
+}
+.proj-desc h3 {
+	text-align: center;
+}
+.proj-desc p {
+	text-align: justify;
+	padding: 30px;
+}
+.proj-desc a {
+	display: block;
+	margin: auto;
+	text-align: center;
+	width: 250px;
+	color: #34495e;
+	text-decoration: none;
+	font-size: 1.1em;
+}
+
+.proj-info {
+	clear: both;
+}
+.proj-info label {
+	padding: 20px;
+}
+.proj-info form{
+	padding: 10px;
+}
+	
+
+
+#searchForm {
+	display: block;
+	margin: auto;
+}
+#searchForm label {
+	display: block;
+	text-align: center;
+}
+#searchForm input[type=text], input[type=email] {
+	width: 300px;
+	display: block;
+}
+#searchForm input[type=submit] {
+	width: 100px;
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	margin-bittom: 10px;
+}
+#wiki-result {
+	width: 80%;
+	padding: 20px;
+	display: block;
+	margin: auto;
+	margin-top: -200px;
+}
+
+.wiki-result-list {
+	list-style-type: none;
+	text-align: left;
+	padding-top: 20px;
+}
+.wiki-result-list strong a {
+	color:#34495e;	
+}
+
+
+/*  
+The code below will set the @media queries to be responsive for larger screens
+Query 1 - Tablet Size ()
+Query 2 - Desktop Size
+*/
+
+/* TABLET VIEW @ 480PX BREAKPOINT */
+@media screen and (min-width: 480px) {
+	body {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	nav {
+		display: block;
+		
+	}
+	nav ul {
+		transform: translate(-50%);
+		margin-left: 50%;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+	}
+	#active {
+		border-bottom: 5px solid #34495e;
+	}
+	nav li {
+		font-size: 100%;
+		text-align: center;
+		width: 80px;
+		border-bottom: 5px solid #fff;
+		transition: border-bottom 0.2s ease;
+	}
+	nav a {
+		color:#2c3e50;
+	}
+	nav li:hover {
+
+		border-bottom: 5px solid #34495e;
+	}
+	.welcome {
+		margin-top: 100px;
+	}
+	#menu {
+		display: none;
+	}
+	#nav-menu {
+		display: block;
+		background-color: #fff;
+		margin-top: 0px;
+	}
+	footer {
+		height: 300px;
+	}
+	footer img {
+		margin: 0 30px 0 30px;
+	}
+	.examples img {
+		width: 25%;
+	}
+	.showcase {
+		
+		margin: auto;
+		height: 250px;
+	}
+	.showcase h3 {
+		display: block;
+		margin: auto;
+		text-align: left;
+		width: 50%;
+		font-size: small;
+	}
+	.showcase p {
+		display: inline-block;
+		margin: auto;
+		text-align: justify;
+		padding: 30px;
+		width: 40%;
+		margin-top:30px;
+	}
+	.showcase a {
+		display: inline-block;
+		width: 40%;
+		margin: auto;
+		margin-top: 10px;
+	}
+	.showcase a img {
+		width: 100%;
+	}
+	.showcase:nth-child(2) {
+		margin-top: 110px;
+	}
+
+	.edu-detail:nth-child(2) {
+		margin-top: 150px;
+	}
+	.edu-detail h3, h4, h6 {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.edu-detail p {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.proj-heading {
+		margin-top: 80px;
+	}
+	.proj-desc {
+	}
+	.proj-desc p {
+		padding: 0;
+	}
+	.map ol {
+		display: flex;
+	}
+
+}
+/* DESKTOP VIEW @ 1100px breakpoint */
+@media screen and (min-width: 1260px) {
+	body {
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+	#nav-menu {
+		margin-top: 30px;
+		width: 350px;
+	}
+	#logo {
+		float: left;
+		margin-left: 0;
+		transform: translate(0);
+		text-align: left;
+	}
+	nav {
+		float: right;
+	}
+	.welcome {
+		margin-top: 20px;
+	}
+	#menu {
+		display: none;
+	}
+	main {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.examples {
+		display: inline-flex;
+		text-align: justify;
+		
+	}
+	.examples img {
+		width: 50%;
+		
+		margin-bottom: 20px;
+	}
+	.examples article {
+		flex-direction: column;
+		height: 300px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	footer img {
+		margin: 0 20px 0 0px;
+	}
+	.content-holder {
+		margin-top: 10px;
+	}
+	.heading {
+		display: block;
+	}
+	.showcase {
+		display:block;
+		margin: auto;
+		height: 300px;
+	}
+	.showcase h3 {
+		margin: auto;
+		text-align: left;
+		margin-left: 50px;
+		width: 40%;
+		font-size: medium;
+	}
+	.showcase p {
+		display: inline-block;
+		margin: auto;
+		text-align: justify;
+		padding: 30px;
+		padding-top: 0;
+		width: 45%;
+		margin-top:30px;
+
+	}
+	.showcase a {
+		display: inline-block;
+		width: 35%;
+		margin: auto;
+		margin-top: 30px;
+		margin-right: 30px;
+		float: right;
+	}
+
+	.showcase:nth-child(2) {
+		margin-top: 100px;
+	}
+
+	.edu-detail {
+		display: block;
+		margin: auto;
+		height: 400px;
+		margin-top: 50px;
+	}
+	.edu-detail:nth-child(2) {
+		margin-top: 40px;
+	}
+	.edu-detail h3, h4, h6 {
+		height: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.edu-detail p {
+		width: 50%;
+		margin-top: 10px;
+		display: inline-block;
+		text-align: justify;
+		padding: 20px;
+		padding-top: 0;
+	}
+	figure {
+		display:block;
+		float: right;
+	}
+	.proj-heading {
+		margin-top: 10px;
+	}
+	.content-holder h2 {
+		text-align: left;
+	}
+	
+}
